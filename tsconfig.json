@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* 指定编译之后的版本目录【指定ECMAScript目标版本】
+   "ES3","ES5","ES6","ES2015","ES2016",
+   "ES2017","ES2018","ES2019","ES2020","ESNext"
+  */
+//    "target": "esnext",
+    "declaration": true,
+    /* 生成相关的 '.d.ts' 文件。 */
+    "declarationDir": "./dist/types",
+    /* '.d.ts' 文件输出目录 */
+    "jsx": "preserve"
+  },
+  "include": [
+    "src/**/*",
+    "src/button/index.tsx",
+    "src/shims-vue.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  /* 指定要包含在编译中的库文件 */
+  "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": "true"
+}
