@@ -6,9 +6,9 @@ const config = require('../package.json')
         try {
             const { version } = config
             const buildTime = dayjs().format('YYYY-MM-DD HH:mm:ss')
-            const desc = `构建时间：${buildTime}`
+            const desc = `构建时间-${buildTime}`
 
-            await sendMsgByWebhook({ version })
+            await sendMsgByWebhook({ version, desc })
         } catch (e) {
             console.log(`===================脚本报错↓===================`)
             console.log(e)
@@ -18,14 +18,15 @@ const config = require('../package.json')
     })();
 
 async function sendMsgByWebhook (msg) {
-    const { version } = msg
+    const { version, desc } = msg    
     const WEBHOOK_KEY = process.env.WEBHOOK_KEY
+    const COMMIT_MESSAGE = process.env.COMMIT_MESSAGE
     const { data: { errcode, errmsg } } = await axios.post(`https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${WEBHOOK_KEY}`, {
-        msgtype: "text",
-        text: {
-            "content": `构建ExcitedUI:${version}`,
-            "mentioned_list": ["@all"],
-            "mentioned_mobile_list": ["@all"]
+        msgtype: "markdown",
+        markdown: {
+            content: `构建通知：<font color=\"warning\">[ExcitedUI](https://grapevinelin.github.io/excited-ui/)</font>-${version}\n
+             >描述：<font color=\"info\">${desc}</font>
+             >commit：<font color=\"info\">${COMMIT_MESSAGE}</font>`
         }
     })
     if (errcode === 0) {
