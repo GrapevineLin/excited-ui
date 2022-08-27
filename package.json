@@ -18,6 +18,8 @@
     "@types/node": "^18.7.13",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.5",
     "unocss": "^0.45.12",
     "vite": "^3.0.9",
     "vitepress": "1.0.0-alpha.12"
