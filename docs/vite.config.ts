@@ -4,7 +4,7 @@ import Unocss from "../config/unocss";
 // https://vitejs.dev/config/
 import path from "path";
 
- 
+
 export default defineConfig({
   plugins: [
     // 添加JSX插件
@@ -13,7 +13,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-        '@': path.resolve(__dirname, '../src')
+      '@': path.resolve(__dirname, '../src')
     }
-},
+  },
 });

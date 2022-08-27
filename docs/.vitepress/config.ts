@@ -23,6 +23,10 @@ export default defineConfigWithTheme({
         }
       ]
     }
+  },
+  markdown: {
+    theme: 'material-palenight',
+    lineNumbers: true
   }
 })
 
