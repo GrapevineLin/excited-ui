@@ -1,6 +1,19 @@
+<p align="center">
+  <a href="https://github.com/GrapevineLin/excited-ui" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="docs/public/images/logo.png" alt="Vite logo">
+  </a>
+</p>
+<br/>
+
 # Excited UI
 
 一个用于练习的Vue3组件库，因为看起来很令人兴奋，所以叫 `Excited UI`
+
+## 关于logo
+
+无设计，白嫖自这个网站：https://www.shopify.com/tools/logo-maker/onboarding/preview
+
+这个[AI绘图](https://openai.com/dall-e-2/)似乎更有趣，但是需要💰
 
 ## 技术栈考量
 
@@ -13,6 +26,7 @@
 - UnoCSS: 可定制性和易用性都很棒的原子化CSS
 - VitePress：基于Vite的文档建设工具
 
+- 代码一致化：编码规范： ESLint （语法） + Prettier（格式）+ Husky (提交时自动检查)；
 
 [为什么原子化CSS选择Uno？](https://antfu.me/posts/reimagine-atomic-css-zh)
 
@@ -20,11 +34,11 @@
 
 ## 功能实现
 
-- [ ] 支持完整引入和按需引入
+- [x] 支持完整引入和按需引入
+- [x] 文档建设
+- [ ] 代码一致化
 - [ ] 单元测试
 - [ ] 主题换色
-- [ ] 文档
-- 
 
 ## 进阶
 
