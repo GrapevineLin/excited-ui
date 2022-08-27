@@ -49,8 +49,6 @@ jobs:
       # 运行构建脚本
       - name: Build frontend
         run: |
-          export WEBHOOK_KEY=${{ secrets.WEBHOOK_KEY }}
-          node scripts/ci-upload.js 
           pnpm docs:build
 
       - name: Deploy to GitHub Pages
