@@ -9,15 +9,9 @@
 
 一个用于练习的Vue3组件库，因为看起来很令人兴奋，所以叫 `Excited UI`
 
-## 关于logo
-
-无设计，白嫖自这个网站：https://www.shopify.com/tools/logo-maker/onboarding/preview
-
-这个[AI绘图](https://openai.com/dall-e-2/)似乎更有趣，但是需要💰
-
 ## 技术栈考量
 
-既然是练习为目的的库，那么技术方便的选择一定有有点意思~
+既然是练习为目的的库，那么技术方面的选择一定有有点意思~
 
 - Vue3：Vue的最新版本
 - Vite：下一代前端构建工具
@@ -45,3 +39,9 @@
 ### Web Components
 
 如果能编译成 `Web Components`，可以在技术栈不敏感的场景下使用，那么将实用性将大大提升，具体仍需[调研](https://cn.vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue)
+
+## 关于logo
+
+无设计，白嫖自这个网站：https://www.shopify.com/tools/logo-maker/onboarding/preview
+
+这个[AI绘图](https://openai.com/dall-e-2/)似乎更有趣，但是需要💰
