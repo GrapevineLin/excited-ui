@@ -11,6 +11,7 @@
 - TypeScript：工程化必备
 - Pnpm：快速的，节省磁盘空间的包管理工具
 - UnoCSS: 可定制性和易用性都很棒的原子化CSS
+- VitePress：基于Vite的文档建设工具
 
 
 [为什么原子化CSS选择Uno？](https://antfu.me/posts/reimagine-atomic-css-zh)

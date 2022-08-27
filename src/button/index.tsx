@@ -1,9 +1,10 @@
-import { defineComponent, PropType, toRefs } from "vue";
+import { defineComponent,defineProps, PropType, toRefs } from "vue";
 import { unoColors, unoIcons } from "../../config/unocss"
 import "uno.css";
 
 export type IColor = keyof typeof unoColors
 export type IIcon = keyof typeof unoIcons
+
 export const props = {
   color: {
     type: String as PropType<IColor>,
@@ -27,8 +28,8 @@ export default defineComponent({
       rounded-lg 
       shadow-md 
       text-white 
-      bg-${props.color}-500 
-      hover:bg-${props.color}-700 
+      bg-${String(props.color)}-500 
+      hover:bg-${String(props.color)}-700 
       border-none 
       cursor-pointer 
       m-1

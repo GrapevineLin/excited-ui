@@ -9,7 +9,11 @@
     /* 生成相关的 '.d.ts' 文件。 */
     "declarationDir": "./dist/types",
     /* '.d.ts' 文件输出目录 */
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths":{
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "src/**/*",
