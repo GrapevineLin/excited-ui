@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/GrapevineLin/excited-ui" target="_blank" rel="noopener noreferrer">
+  <a href="https://grapevinelin.github.io/excited-ui/" target="_blank" rel="noopener noreferrer">
     <img width="180" src="docs/public/images/logo.png" alt="Vite logo">
   </a>
 </p>
@@ -8,6 +8,8 @@
 # Excited UI
 
 一个用于练习的Vue3组件库，因为看起来很令人兴奋，所以叫 `Excited UI`
+
+[阅读文档](https://grapevinelin.github.io/excited-ui/)
 
 ## 技术栈考量
 
