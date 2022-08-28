@@ -66,4 +66,5 @@ jobs:
         run: |
           export WEBHOOK_KEY=${{ secrets.WEBHOOK_KEY }}
           export COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+          export COMMITTER="${{ github.event.head_commit.committer }}"
           node scripts/ci-upload.js

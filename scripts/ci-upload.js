@@ -21,12 +21,14 @@ async function sendMsgByWebhook (msg) {
     const { version, desc } = msg    
     const WEBHOOK_KEY = process.env.WEBHOOK_KEY
     const COMMIT_MESSAGE = process.env.COMMIT_MESSAGE
+    const COMMITTER = process.env.COMMITTER
     const { data: { errcode, errmsg } } = await axios.post(`https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${WEBHOOK_KEY}`, {
         msgtype: "markdown",
         markdown: {
             content: `构建通知：<font color=\"warning\">[ExcitedUI](https://grapevinelin.github.io/excited-ui/)</font>-${version}\n
              >描述：<font color=\"info\">${desc}</font>
-             >commit：<font color=\"info\">${COMMIT_MESSAGE}</font>`
+             >message：<font color=\"info\">${COMMIT_MESSAGE}</font>
+             >committer：<font color=\"info\">${COMMITTER}</font>`
         }
     })
     if (errcode === 0) {

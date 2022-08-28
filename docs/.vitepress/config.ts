@@ -3,7 +3,7 @@ import { version } from '../../package.json'
 
 export default defineConfigWithTheme({
   lang: 'zh-CN',
-  title: 'Hello ExcitedUI',
+  title: 'ExcitedUI',
   description: 'An Excited UI Library',
   base: '/excited-ui/',
   lastUpdated: true,
