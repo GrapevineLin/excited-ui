@@ -6,62 +6,62 @@
 基础的函数用法
 
  <div style="margin-bottom:20px;">
-  <Button color="blue">主要按钮</Button>
-  <Button color="green">绿色按钮</Button>
-  <Button color="gray">灰色按钮</Button>
-  <Button color="yellow">黄色按钮</Button>
-  <Button color="red">红色按钮</Button>
+  <ExButton color="blue">主要按钮</ExButton>
+  <ExButton color="green">绿色按钮</ExButton>
+  <ExButton color="gray">灰色按钮</ExButton>
+  <ExButton color="yellow">黄色按钮</ExButton>
+  <ExButton color="red">红色按钮</ExButton>
  </div>
  <div style="margin-bottom:20px;">
-  <Button size="small" plain>小按钮</Button>
-  <Button size="medium" plain>中按钮</Button>
-  <Button size="large" plain>大按钮</Button>
+  <ExButton size="small" plain>小按钮</ExButton>
+  <ExButton size="medium" plain>中按钮</ExButton>
+  <ExButton size="large" plain>大按钮</ExButton>
  </div>
  <div style="margin-bottom:20px;">
-  <Button color="blue" round plain icon="search">搜索按钮</Button>
-  <Button color="green" round plain icon="edit">编辑按钮</Button>
-  <Button color="gray" round plain icon="check">成功按钮</Button>
-  <Button color="yellow" round plain icon="message">提示按钮</Button>
-  <Button color="red" round plain icon="delete">删除按钮</Button>
+  <ExButton color="blue" round plain icon="search">搜索按钮</ExButton>
+  <ExButton color="green" round plain icon="edit">编辑按钮</ExButton>
+  <ExButton color="gray" round plain icon="check">成功按钮</ExButton>
+  <ExButton color="yellow" round plain icon="message">提示按钮</ExButton>
+  <ExButton color="red" round plain icon="delete">删除按钮</ExButton>
  </div>
 
-:::details 使用`size`、`color`、`pain`、`round`属性来定义 Button 的样式。
+:::details 使用`size`、`color`、`pain`、`round`属性来定义 ExButton 的样式。
 
 ```vue
 <template>
  <div style="margin-bottom:20px;">
-  <Button color="blue">主要按钮</Button>
-  <Button color="green">绿色按钮</Button>
-  <Button color="gray">灰色按钮</Button>
-  <Button color="yellow">黄色按钮</Button>
-  <Button color="red">红色按钮</Button>
+  <ExButton color="blue">主要按钮</ExButton>
+  <ExButton color="green">绿色按钮</ExButton>
+  <ExButton color="gray">灰色按钮</ExButton>
+  <ExButton color="yellow">黄色按钮</ExButton>
+  <ExButton color="red">红色按钮</ExButton>
  </div>
  <div style="margin-bottom:20px;"
  >
-  <Button color="blue" plain>朴素按钮</Button>
-  <Button color="green" plain>绿色按钮</Button>
-  <Button color="gray" plain>灰色按钮</Button>
-  <Button color="yellow" plain>黄色按钮</Button>
-  <Button color="red" plain>红色按钮</Button>
+  <ExButton color="blue" plain>朴素按钮</ExButton>
+  <ExButton color="green" plain>绿色按钮</ExButton>
+  <ExButton color="gray" plain>灰色按钮</ExButton>
+  <ExButton color="yellow" plain>黄色按钮</ExButton>
+  <ExButton color="red" plain>红色按钮</ExButton>
  </div>
  <div style="margin-bottom:20px;">
-  <Button size="small" plain>小按钮</Button>
-  <Button size="medium" plain>中按钮</Button>
-  <Button size="large" plain>大按钮</Button>
+  <ExButton size="small" plain>小按钮</ExButton>
+  <ExButton size="medium" plain>中按钮</ExButton>
+  <ExButton size="large" plain>大按钮</ExButton>
  </div>
  <div style="margin-bottom:20px;">
-  <Button color="blue" round plain icon="search">搜索按钮</Button>
-  <Button color="green" round plain icon="edit">编辑按钮</Button>
-  <Button color="gray" round plain icon="check">成功按钮</Button>
-  <Button color="yellow" round plain icon="message">提示按钮</Button>
-  <Button color="red" round plain icon="delete">删除按钮</Button>
+  <ExButton color="blue" round plain icon="search">搜索按钮</ExButton>
+  <ExButton color="green" round plain icon="edit">编辑按钮</ExButton>
+  <ExButton color="gray" round plain icon="check">成功按钮</ExButton>
+  <ExButton color="yellow" round plain icon="message">提示按钮</ExButton>
+  <ExButton color="red" round plain icon="delete">删除按钮</ExButton>
  </div>
  <div style="margin-bottom:20px;">
-  <Button color="blue" round plain icon="search"></Button>
-  <Button color="green" round plain icon="edit"></Button>
-  <Button color="gray" round plain icon="check"></Button>
-  <Button color="yellow" round plain icon="message"></Button>
-  <Button color="red" round plain icon="delete"></Button>
+  <ExButton color="blue" round plain icon="search"></ExButton>
+  <ExButton color="green" round plain icon="edit"></ExButton>
+  <ExButton color="gray" round plain icon="check"></ExButton>
+  <ExButton color="yellow" round plain icon="message"></ExButton>
+  <ExButton color="red" round plain icon="delete"></ExButton>
  </div>
 </template>
 ```
@@ -72,10 +72,10 @@
 带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。
 
  <div class="flex flex-row">
-  <Button icon="edit" plain></Button>
-  <Button icon="delete" plain></Button>
-  <Button icon="share" plain></Button>
-  <Button round plain icon="search">搜索</Button>
+  <ExButton icon="edit" plain></ExButton>
+  <ExButton icon="delete" plain></ExButton>
+  <ExButton icon="share" plain></ExButton>
+  <ExButton round plain icon="search">搜索</ExButton>
  </div>
 
 
@@ -84,10 +84,10 @@
 ```vue
 <template>
  <div class="flex flex-row">
-  <Button icon="edit" plain></Button>
-  <Button icon="delete" plain></Button>
-  <Button icon="share" plain></Button>
-  <Button round plain icon="search">搜索</Button>
+  <ExButton icon="edit" plain></ExButton>
+  <ExButton icon="delete" plain></ExButton>
+  <ExButton icon="share" plain></ExButton>
+  <ExButton round plain icon="search">搜索</ExButton>
  </div>
 </template>
 ```

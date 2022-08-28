@@ -4,7 +4,7 @@
 
 <script lang="ts">
 export default {
-  name: "Image",
+  name: "ExImage",
   setup(props: { src: string }) {
     return props;
   },

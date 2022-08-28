@@ -17,7 +17,7 @@ export const props = {
 }
 
 export default defineComponent({
-  name: "Button",
+  name: "ExButton",
   props,
   setup(props, { slots }) {
     return () => <button

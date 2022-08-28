@@ -9,5 +9,4 @@ export default {
   install(app: App): void {
     app.component(Button.name, Button);
   },
-
 };
