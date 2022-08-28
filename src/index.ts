@@ -3,10 +3,10 @@ import { createApp } from "vue";
 import ExButton from "./Button/index";
 
 createApp({
-    components:{
-        ExButton
-    },
-    template:`
+  components: {
+    ExButton,
+  },
+  template: `
         <div>
             <ExButton color="blue">蓝色按钮</ExButton>
             <ExButton color="green">绿色按钮</ExButton>
@@ -22,6 +22,5 @@ createApp({
             <ExButton color="yellow" round plain icon="message" ></ExButton>
             <ExButton color="red" round plain icon="delete" ></ExButton>
         </div>
-    `
-})
-.mount("#app");
+    `,
+}).mount("#app");
