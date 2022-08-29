@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.1.1
   '@commitlint/config-conventional': ^17.1.0
+  '@commitlint/types': ^17.0.0
   '@iconify-json/ic': ^1.1.9
   '@types/node': ^18.7.13
   '@typescript-eslint/eslint-plugin': ^5.35.1
@@ -38,6 +39,7 @@ dependencies:
   vue: 3.2.37
 
 devDependencies:
+  '@commitlint/types': 17.0.0
   '@iconify-json/ic': 1.1.9
   '@types/node': 18.7.13
   '@typescript-eslint/eslint-plugin': 5.35.1_pfwtupu3r4wxmgbx6hj7gwmyuu
@@ -647,7 +649,6 @@ packages:
     engines: {node: '>=v14'}
     dependencies:
       chalk: 4.1.2
-    dev: false
 
   /@cspotcode/source-map-support/0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
