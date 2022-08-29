@@ -1,5 +1,5 @@
 import { App } from "vue";
-import Button from "@/button/index";
+import Button from "@/button/Button";
 
 // 导出单独组件
 export { Button };

@@ -17,7 +17,6 @@
   },
   "include": [
     "src/**/*",
-    "src/button/index.tsx",
     "src/shims-vue.d.ts"
   ],
   "exclude": [
