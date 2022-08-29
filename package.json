@@ -15,9 +15,14 @@
     "test": "vitest",
     "test:run": "vitest run --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "excited",
+    "vue",
+    "ui",
+    "vitepress"
+  ],
+  "author": "Grapevine(YD)Lin",
+  "license": "MIT",
   "devDependencies": {
     "@iconify-json/ic": "^1.1.9",
     "@types/node": "^18.7.13",

@@ -6,6 +6,9 @@
 <br/>
 
 <p align="center">
+  <!-- <a href="https://github.com/GrapevineLin/excited-ui">
+    <img src="https://img.shields.io/badge/Excited-%E5%AD%A6%E4%B9%A0%E4%B8%80%E4%B8%AA-blue"/>
+  </a> -->
   <a href="https://github.com/GrapevineLin/excited-ui">
     <img src="https://github.com/GrapevineLin/excited-ui/actions/workflows/ci.yaml/badge.svg"/>
   </a>
