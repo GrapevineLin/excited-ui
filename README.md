@@ -5,6 +5,15 @@
 </p>
 <br/>
 
+<p align="center">
+  <a href="https://github.com/GrapevineLin/excited-ui">
+    <img src="https://github.com/GrapevineLin/excited-ui/actions/workflows/ci.yaml/badge.svg"/>
+  </a>
+  <a href="https://codecov.io/gh/GrapevineLin/excited-ui" > 
+    <img src="https://codecov.io/gh/GrapevineLin/excited-ui/branch/main/graph/badge.svg?token=CMRZP7WCFA"/> 
+  </a>
+</p>
+
 # Excited UI
 
 一个用于练习的Vue3组件库，因为看起来很令人兴奋，所以叫 `Excited UI`
