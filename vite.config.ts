@@ -15,6 +15,7 @@ export default defineConfig({
   },
   plugins: [vue(), vueJsx(), unocss()],
   build: {
+    sourcemap: true, // 输出单独 source文件
     rollupOptions: {
       external: ["vue", "vue-router"],
       output: {
