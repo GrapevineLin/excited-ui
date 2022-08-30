@@ -61,6 +61,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Shanghai"
+          
       # 运行通知脚本
       - name: Run WebHook
         run: |
@@ -108,6 +112,6 @@ jobs:
 
       - name: Run the tests
         run: pnpm test:run
-        
+      
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
