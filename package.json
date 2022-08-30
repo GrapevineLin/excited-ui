@@ -15,10 +15,16 @@
     "test": "vitest",
     "test:run": "vitest run --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "excited",
+    "vue",
+    "ui",
+    "vitepress"
+  ],
+  "author": "Grapevine(YD)Lin",
+  "license": "MIT",
   "devDependencies": {
+    "@commitlint/types": "^17.0.0",
     "@iconify-json/ic": "^1.1.9",
     "@types/node": "^18.7.13",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
@@ -56,5 +62,14 @@
     "*.{ts,tsx,vue,js,jsx}": [
       "pnpm lint"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrapevineLin/excited-ui"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta",
+    "access": "public"
   }
 }
