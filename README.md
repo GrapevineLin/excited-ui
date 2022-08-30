@@ -15,6 +15,7 @@
   <a href="https://codecov.io/gh/GrapevineLin/excited-ui" > 
     <img src="https://codecov.io/gh/GrapevineLin/excited-ui/branch/main/graph/badge.svg?token=CMRZP7WCFA"/> 
   </a>
+  <a href="https://badge.fury.io/js/excited-ui"><img src="https://badge.fury.io/js/excited-ui.svg" alt="npm version" height="18"></a>
 </p>
 
 # Excited UI

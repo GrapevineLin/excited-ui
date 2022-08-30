@@ -62,5 +62,14 @@
     "*.{ts,tsx,vue,js,jsx}": [
       "pnpm lint"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrapevineLin/excited-ui"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta",
+    "access": "public"
   }
 }
