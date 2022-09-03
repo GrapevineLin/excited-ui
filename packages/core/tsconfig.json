@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./dist", // Your outDir
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "composite": true
+  },
+  "include": ["src/**/*","config/*","index.ts", "../../button"],
+  "esModuleInterop": "true",
+  "allowSyntheticDefaultImports": "true"
+}

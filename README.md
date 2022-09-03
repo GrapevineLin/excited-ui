@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://grapevinelin.github.io/excited-ui/" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="docs/public/images/logo.png" alt="Vite logo">
+    <img width="180" src="https://grapevinelin.github.io/excited-ui/images/logo.png" alt="Vite logo">
   </a>
 </p>
 <br/>
@@ -45,9 +45,10 @@
 
 - [x] 支持完整引入和按需引入
 - [x] 文档建设
-- [ ] 代码一致化
-- [ ] 单元测试
+- [x] 代码一致化
+- [x] 单元测试
 - [ ] 主题换色
+- [x] monorepo
 
 ## 进阶
 

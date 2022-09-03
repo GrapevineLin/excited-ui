@@ -1,12 +1,12 @@
 import { App } from "vue";
-import Button from "@/button/Button";
+import ExButton from "@/button";
 
 // 导出单独组件
-export { Button };
+export { ExButton };
 
 // 编写一个插件，实现一个install方法
-export default {
+export const ExcitedUI = {
   install(app: App): void {
-    app.component(Button.name, Button);
+    app.component(ExButton.name, ExButton);
   },
 };

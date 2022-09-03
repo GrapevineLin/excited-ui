@@ -1,5 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
-import { version } from '../../package.json'
+// import { version } from '../docs/package.json'
 
 export default defineConfigWithTheme({
   lang: 'zh-CN',
@@ -17,8 +17,8 @@ export default defineConfigWithTheme({
       '/': [
         {
           text: '组件',
-          items: [
-            { text: 'Button', link: '/button/' },
+          items: [ 
+            { text: 'Button', link: '/components/button/index' },
           ]
         }
       ]
@@ -33,7 +33,7 @@ export default defineConfigWithTheme({
 function nav() {
   return [
     {
-      text: version,
+      text: 'version',
       items: [
         {
           text: '版本日志',

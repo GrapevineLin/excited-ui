@@ -1,6 +1,5 @@
 import { defineComponent, PropType } from "vue";
 import { unoColors, unoIcons } from "../../config/unocss";
-import "uno.css";
 
 export type IColor = typeof unoColors[number];
 export type IIcon = typeof unoIcons[number];

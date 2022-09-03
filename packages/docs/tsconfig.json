@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist", // Your outDir
+    "resolveJsonModule": true,
+    // "baseUrl": "./",
+    // "paths":{
+    //   "@/*": ["src/*"]
+    // }
+  },
+  "include": ["docs/**/*", "vite.config.ts"],
+  "references": [{ "path": "../core/tsconfig.json" }]
+}

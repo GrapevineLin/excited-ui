@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 
-import ExButton from "./Button/index";
+import ExButton from "./button/index";
 
 createApp({
   components: {

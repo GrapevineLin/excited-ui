@@ -1,0 +1,30 @@
+{
+  "name": "@excited-ui/core",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [
+    "excited",
+    "vue",
+    "ui",
+    "vitepress"
+  ],
+  "author": "Grapevine(YD)Lin",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.cjs",
+      "import": "./index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/excited-ui.js",
+  "module": "dist/excited-ui.mjs",
+  "unpkg": "dist/excited-ui.iife.js",
+  "jsdelivr": "dist/excited-ui.iife.js",
+  "types": "dist/index.d.ts"
+}

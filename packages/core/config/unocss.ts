@@ -15,15 +15,15 @@ export const unoColors = [
 ];
 
 export const unoIcons = [
-    "search",
-    "edit",
-    "check",
-    "message",
-    "star-off",
-    "delete",
-    "add",
-    "share",
-]
+  "search",
+  "edit",
+  "check",
+  "message",
+  "star-off",
+  "delete",
+  "add",
+  "share",
+];
 
 const safelist = [
   ...unoColors.map((v) => `bg-${v}-500`),
@@ -35,8 +35,8 @@ export default () =>
   Unocss({
     safelist,
     presets: [
-        presetUno(), 
-        presetAttributify(),
-        presetIcons(),  // 添加图标预设
-        ],
+      presetUno(),
+      presetAttributify(),
+      presetIcons(), // 添加图标预设
+    ],
   });

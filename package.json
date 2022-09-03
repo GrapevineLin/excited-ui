@@ -4,16 +4,17 @@
   "description": "an excited ui",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "lint": "eslint --fix --ext .ts,.vue src",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
+    "dev": "vite packages/core",
+    "build": "vite build packages/core",
+    "docs:dev": "vitepress dev packages/docs --open",
+    "docs:build": "vitepress build packages/docs",
+    "docs:serve": "vitepress serve packages/docs",
+    "lint": "eslint --fix --ext .ts,.vue packages",
+    "format": "prettier --write \"packages/**/*.ts\" \"packages/**/*.vue\"",
     "prepare": "husky install",
-    "test": "vitest",
-    "test:run": "vitest run --coverage"
+    "test": "vitest --config packages/core/vite.config.ts",
+    "test:run": "vitest run --coverage --config packages/core/vite.config.ts",
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "keywords": [
     "excited",
@@ -25,10 +26,11 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/types": "^17.0.0",
+    "@excited-ui/core": "workspace:*",
     "@iconify-json/ic": "^1.1.9",
-    "@types/node": "^18.7.13",
-    "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/parser": "^5.35.1",
+    "@types/node": "^18.7.14",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vitest/coverage-c8": "^0.22.1",
@@ -48,15 +50,16 @@
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.2",
-    "unocss": "^0.45.12",
+    "unocss": "^0.45.14",
     "vite": "^3.0.9",
-    "vitepress": "1.0.0-alpha.12",
+    "vite-plugin-dts": "^1.4.1",
+    "vitepress": "1.0.0-alpha.13",
     "vitest": "^0.22.1"
   },
   "dependencies": {
-    "@commitlint/cli": "^17.1.1",
+    "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "vue": "^3.2.37"
+    "vue": "^3.2.38"
   },
   "lint-staged": {
     "*.{ts,tsx,vue,js,jsx}": [
@@ -71,5 +74,8 @@
     "registry": "https://registry.npmjs.org/",
     "tag": "beta",
     "access": "public"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
