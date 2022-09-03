@@ -1,11 +1,14 @@
 import { defineConfigWithTheme } from 'vitepress'
 // import { version } from '../docs/package.json'
+const env = require('process').env
+
+const DEPLOY_BASE = env.DEPLOY_BASE ??  '/excited-ui/'
 
 export default defineConfigWithTheme({
   lang: 'zh-CN',
   title: 'ExcitedUI',
   description: 'An Excited UI Library',
-  base: '/excited-ui/',
+  base: DEPLOY_BASE,
   lastUpdated: true,
   themeConfig: {
     logo: '/images/logo.png',
