@@ -1,5 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
-// import { version } from '../docs/package.json'
+import { version } from '@excited-ui/core/package.json'
 const env = require('process').env
 
 const DEPLOY_BASE = env.DEPLOY_BASE ??  '/excited-ui/'
@@ -21,13 +21,14 @@ export default defineConfigWithTheme({
         {
           text: '组件',
           items: [ 
-            { text: 'Button', link: '/components/button/index' },
+            { text: 'Button', link: '/pages/Button/index' },
           ]
         }
       ]
     }
   },
   markdown: {
+    // theme: 'dracula',
     theme: 'material-palenight',
     lineNumbers: true
   }
@@ -36,7 +37,7 @@ export default defineConfigWithTheme({
 function nav() {
   return [
     {
-      text: 'version',
+      text: version,
       items: [
         {
           text: '版本日志',

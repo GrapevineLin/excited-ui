@@ -27,5 +27,7 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "prettier/prettier": "error",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": "off",
   },
 };

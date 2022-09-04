@@ -1,4 +1,4 @@
-import ExButton from "../Button";
+import { ExButton } from "../Button";
 // import ExButton from "@excited-ui/core/src/button/Button";
 
 import { mount, shallowMount } from "@vue/test-utils";

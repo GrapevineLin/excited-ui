@@ -30,7 +30,7 @@ export default defineConfig({
     cssCodeSplit: true,
     minify: false,
     lib: {
-      entry: "./index.ts",
+      entry: "./src/index.ts",
       name: "ExcitedUI",
       fileName: "excited-ui",
       // 导出模块格式

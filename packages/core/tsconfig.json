@@ -9,7 +9,7 @@
     },
     "composite": true
   },
-  "include": ["src/**/*","config/*","index.ts", "../../button"],
+  "include": ["src/**/*","config/*"],
   "esModuleInterop": "true",
   "allowSyntheticDefaultImports": "true"
 }

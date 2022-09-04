@@ -1,23 +1,18 @@
 import { defineConfig, searchForWorkspaceRoot } from "vite";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import path from "path";
+import Unocss from "./uno.config";
 // import '@excited/core/dist/assets/'
 // https://vitejs.dev/config/
 
 export default defineConfig({
-  plugins: [
-    // 添加JSX插件
-    vueJsx(),
-  ],
+  plugins: [Unocss(), vueJsx()],
   resolve: {
-    alias: [
-      // {
-      //   find: /^@\/(.*)$/,
-      //   replacement: `${path.resolve("..")}/src/$1`,
-      // },
-    ],
-    // alias: {
-    //   "@": path.resolve(__dirname, "../src"),
-    // },
+    alias: {
+      "@/components": path.resolve(__dirname, "./components"),
+      "@/pages": path.resolve(__dirname, "./pages"),
+      "@/utils": path.resolve(__dirname, "./utils"),
+    },
   },
   server: {
     fs: {

@@ -19,16 +19,15 @@
     "noUnusedLocals": true,
     "paths": {
       "@excited-ui/core": ["./packages/core/src/index.ts"]
-    }
+    },
+    "types": ["vite/client", "node"]
   },
   "include": [
     "packages",
     "packages/docs/docs/.vitepress/components/*.vue",
     "packages/docs/docs/.vitepress/*.ts"
   ],
-  "exclude": [
-    "node_modules", "**/*/dist"
-  ],
+  "exclude": ["node_modules", "**/*/dist"],
   "allowSyntheticDefaultImports": "true",
   "references": [
     // { "path": "./packages/ui/tsconfig.json" },

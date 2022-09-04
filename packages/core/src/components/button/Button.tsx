@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from "vue";
-import { unoColors, unoIcons } from "../../config/unocss";
+import { unoColors, unoIcons } from "../../../config/unocss";
 
 export type IColor = typeof unoColors[number];
 export type IIcon = typeof unoIcons[number];
@@ -15,7 +15,7 @@ export const props = {
   },
 };
 
-export default defineComponent({
+export const ExButton = defineComponent({
   name: "ExButton",
   props,
   setup(props, { slots }) {
@@ -43,3 +43,5 @@ export default defineComponent({
     );
   },
 });
+
+export type ExButton = InstanceType<typeof ExButton>;
