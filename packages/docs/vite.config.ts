@@ -9,9 +9,7 @@ export default defineConfig({
   plugins: [Unocss(), vueJsx()],
   resolve: {
     alias: {
-      "@/components": path.resolve(__dirname, "./components"),
-      "@/pages": path.resolve(__dirname, "./pages"),
-      "@/utils": path.resolve(__dirname, "./utils"),
+      "@": path.resolve(__dirname, "./"),
     },
   },
   server: {

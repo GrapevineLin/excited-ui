@@ -12,7 +12,7 @@
 
 <template #code>
 
-<<< @/pages/Button/button-guide.vue
+<<< @/demos/button/button-guide.vue
 
 </template>
 
@@ -30,7 +30,7 @@
 
 <template #code>
 
-<<< @/pages/Button/button-icon.vue
+<<< @/demos/button/button-icon.vue
 
 </template>
 
