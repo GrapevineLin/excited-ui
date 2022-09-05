@@ -1,16 +1,12 @@
-import { defineComponent, PropType } from "vue";
-import { unoColors, unoIcons } from "../../../config/unocss";
-
-export type IColor = typeof unoColors[number];
-export type IIcon = typeof unoIcons[number];
+import { defineComponent } from "vue";
 
 export const props = {
   color: {
-    type: String as PropType<IColor>,
+    type: String,
     default: "blue", // 设定默认颜色
   },
   icon: {
-    type: String as PropType<IIcon>,
+    type: String,
     required: false,
   },
 };

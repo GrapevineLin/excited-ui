@@ -1,0 +1,60 @@
+@import '@unocss/reset/tailwind.css';
+
+:root {
+    --e-base-color: 0, 10%, 20%;
+    --e-layer: 0, 0%, 100%;
+    --e-border-opacity: 0.12;
+    --e-overlay-color: 0, 0%, 0%;
+    --e-overlay-opacity: 0.35;
+
+    --e-primary: 265, 97.7%, 66.3%;
+    --e-success: 94.5, 100%, 39.6%;
+    --e-info: 200.1, 100%, 54.3%;
+    --e-warning: 42.4, 100%, 50%;
+    --e-danger: 358.3, 100%, 64.9%;
+
+    // text emphasis
+    --e-text-emphasis-high-opacity: 0.87;
+    --e-text-emphasis-medium-opacity: 0.68;
+    --e-text-emphasis-light-opacity: 0.38;
+}
+
+:root.dark {
+  --e-base-color: 0, 0%, 94%;
+  --e-layer: 0, 0%, 12%;
+  --e-overlay-opacity: 0.5;
+
+  --e-primary: 261, 73%, 66.3%;
+  --e-success: 94.5, 73%, 39.6%;
+  --e-info: 200.1, 73%, 54.3%;
+  --e-warning: 42.4, 73%, 50%;
+  --e-danger: 358.3, 73%, 64.9%;
+}
+
+
+html, body {
+  color: hsla(var(--e-base-color), 0.68);
+
+  // Disable mobile tap blue color
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsla(var(--e-base-color), 0.87)
+}
+
+ // Remove outline
+
+.e-btn,
+input,
+select,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}

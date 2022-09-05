@@ -1,6 +1,7 @@
 {
   "name": "@excited-ui/core",
   "version": "0.0.1",
+  "type": "module",
   "description": "",
   "scripts": {
     "dev": "vite",
@@ -16,19 +17,25 @@
   "license": "MIT",
   "exports": {
     ".": {
-      "types": "./src/index.d.ts",
-      "require": "./src/index.cjs",
-      "import": "./src/index.mjs"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/excited-ui.cjs",
+      "import": "./dist/excited-ui.js"
     },
     "./*": "./*"
   },
-  "main": "dist/excited-ui.js",
-  "module": "dist/excited-ui.mjs",
+  "main": "dist/excited-ui.cjs",
+  "module": "dist/excited-ui.js",
   "unpkg": "dist/excited-ui.iife.js",
   "jsdelivr": "dist/excited-ui.iife.js",
-  "types": "dist/src/index.d.ts",
-  "dependencies": {
+  "files": [
+    "dist"
+  ],
+  "types": "dist",
+  "devDependencies": {
     "@iconify-json/ic": "^1.1.9",
-    "unocss": "^0.45.14"
+    "@unocss/core": "^0.45.15",
+    "@unocss/reset": "^0.45.15",
+    "sass": "^1.54.8",
+    "unocss": "^0.45.15"
   }
 }

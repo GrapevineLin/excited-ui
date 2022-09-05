@@ -9,7 +9,7 @@
     },
     "composite": true
   },
-  "include": ["src/**/*","config/*"],
+  "include": ["src/**/*"],
   "esModuleInterop": "true",
   "allowSyntheticDefaultImports": "true"
 }

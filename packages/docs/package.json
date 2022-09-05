@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev --open",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
@@ -18,10 +18,10 @@
   "license": "MIT",
   "dependencies": {
     "@excited-ui/core": "workspace: *",
-    "@iconify-json/ic": "^1.1.9",
-    "unocss": "^0.45.14"
+    "@iconify-json/ic": "^1.1.9"
   },
   "devDependencies": {
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+    "unocss": "^0.45.15"
   }
 }

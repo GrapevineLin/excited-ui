@@ -1,6 +1,6 @@
 import { App } from "vue";
 import * as components from "./components";
-import "uno.css";
+import "./presets/theme-default/scss/index.scss";
 
 export const ExcitedUI = {
   install(app: App) {
@@ -11,5 +11,10 @@ export const ExcitedUI = {
     }
   },
 };
+
+export {
+  eColors as defaultThemeColors,
+  presetThemeDefault,
+} from "./presets/theme-default";
 
 export * from "./components";

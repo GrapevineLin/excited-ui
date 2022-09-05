@@ -1,20 +1,19 @@
 /// <reference types="vitest" />
-import unocss from "./config/unocss";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import dts from "vite-plugin-dts";
-import path from "path";
+import { fileURLToPath } from "url";
 
 export default defineConfig({
   base: "/excited-ui/",
   resolve: {
     alias: {
       // vue: "vue/dist/vue.esm-bundler.js", // 定义vue的别名，如果使用其他的插件，可能会用到别名
-      "@": path.resolve(__dirname, "./src"),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  plugins: [vue(), vueJsx(), unocss(), dts()],
+  plugins: [vue(), vueJsx(), dts()],
   build: {
     sourcemap: true, // 输出单独 source文件
     rollupOptions: {

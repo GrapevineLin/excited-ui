@@ -7,9 +7,9 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/demos/*": ["demos/*"],
-      "@/utils/*": ["utils/*"],
+      "@/utils/*": ["utils/*"]
     }
   },
-  "include": ["components/**/*", "vite.config.ts", ".vitepress/**/*"],
+  "include": ["components/**/*", ".vitepress/**/*", "vite.config.ts"],
   "references": [{ "path": "../core/tsconfig.json" }]
 }
