@@ -1,11 +1,11 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import dts from "vite-plugin-dts";
 import { fileURLToPath } from "url";
 
-export default defineConfig({
+export const config = {
   base: "/excited-ui/",
   resolve: {
     alias: {
@@ -16,6 +16,7 @@ export default defineConfig({
   plugins: [vue(), vueJsx(), dts()],
   build: {
     sourcemap: true, // 输出单独 source文件
+    outDir: "./dist",
     rollupOptions: {
       external: ["vue", "vue-router"],
       output: {
@@ -47,4 +48,7 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+};
+
+// https://vitejs.dev/config/
+export default defineConfig(config as UserConfig);
