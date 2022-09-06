@@ -3,11 +3,15 @@ import { defineComponent } from "vue";
 export const props = {
   color: {
     type: String,
-    default: "blue", // 设定默认颜色
+    default: "white",
   },
   icon: {
     type: String,
     required: false,
+  },
+  variant: {
+    type: String,
+    default: "fill",
   },
 };
 
@@ -23,9 +27,9 @@ export const ExButton = defineComponent({
       font-semibold 
       rounded-lg 
       shadow-md 
-      text-white 
-      bg-${String(props.color)}-500 
-      hover:bg-${String(props.color)}-700 
+      text-${props.color === "white" ? "black" : "white"}
+      bg-${props.color}
+      hover:bg-${String(props.color)}
       border-none 
       cursor-pointer 
       m-1

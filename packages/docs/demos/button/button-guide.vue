@@ -1,10 +1,10 @@
 <template>
   <div style="margin-bottom: 20px">
-    <ExButton color="blue">主要按钮</ExButton>
-    <ExButton color="green">绿色按钮</ExButton>
-    <ExButton color="gray">灰色按钮</ExButton>
-    <ExButton color="yellow">黄色按钮</ExButton>
-    <ExButton color="red">红色按钮</ExButton>
+    <ExButton>Default</ExButton>
+    <ExButton color="success">Success</ExButton>
+    <ExButton color="info">Info</ExButton>
+    <ExButton color="warning">Warning</ExButton>
+    <ExButton color="danger">Danger</ExButton>
   </div>
   <div style="margin-bottom: 20px">
     <ExButton size="small" plain>小按钮</ExButton>

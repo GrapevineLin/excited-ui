@@ -31,8 +31,8 @@ export const unoIcons = [
 ];
 
 const safelist = [
-  ...unoColors.map((v) => `bg-${v}-500`),
-  ...unoColors.map((v) => `hover:bg-${v}-700`),
+  ...unoColors.map((v) => `bg-${v}`),
+  ...unoColors.map((v) => `hover:bg-${v}`),
   ...unoIcons.map((v) => `i-ic-baseline-${v}`),
 ];
 
