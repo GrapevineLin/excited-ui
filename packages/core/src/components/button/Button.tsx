@@ -1,13 +1,41 @@
 import { defineComponent } from "vue";
+import { getButtonClass } from "./tools";
+
+export const buttonTypes = [
+  "default",
+  "primary",
+  "success",
+  "warning",
+  "info",
+  "danger",
+] as const;
+
+export const buttonSizes = ["default", "mini", "medium", "large"] as const;
 
 export const props = {
   color: {
     type: String,
-    default: "blue", // 设定默认颜色
   },
   icon: {
     type: String,
     required: false,
+  },
+  type: {
+    type: String,
+    values: buttonTypes,
+    default: () => "default",
+  },
+  size: {
+    type: String,
+    values: buttonSizes,
+  },
+  square: {
+    type: Boolean,
+    default: false,
+  },
+  plain: {
+    type: Boolean,
+    default: false,
   },
 };
 
@@ -18,18 +46,19 @@ export const ExButton = defineComponent({
     return () => (
       <button
         class={`
-      py-2 
-      px-4 
+      ex-button
+      py-2
+      px-4
       font-semibold 
-      rounded-lg 
       shadow-md 
       text-white 
-      bg-${String(props.color)}-500 
-      hover:bg-${String(props.color)}-700 
+      hover:opacity-80
       border-none 
       cursor-pointer 
       m-1
+      ${getButtonClass(props)}
       `}
+        style={{ "--ex-button-color": props.color }}
       >
         {props.icon && (
           <i class={`i-ic-baseline-${String(props.icon)} p-3`}></i>

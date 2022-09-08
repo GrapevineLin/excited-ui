@@ -3,6 +3,6 @@
     <ExButton icon="edit" plain></ExButton>
     <ExButton icon="delete" plain></ExButton>
     <ExButton icon="share" plain></ExButton>
-    <ExButton round plain icon="search">搜索</ExButton>
+    <ExButton plain icon="search">search</ExButton>
   </div>
 </template>

@@ -7,12 +7,13 @@ export function presetThemeDefault(): Preset {
     name: "@excited-ui/core/preset-theme-default",
     theme: {
       colors: {
-        primary: "hsl(var(--e-primary))",
-        success: "hsl(var(--e-success))",
-        info: "hsl(var(--e-info))",
-        warning: "hsl(var(--e-warning))",
-        danger: "hsl(var(--e-danger))",
-        a: { border: "hsla(var(--e-base-color),var(--e-border-opacity))" },
+        default: "hsl(var(--ex-default))",
+        primary: "hsl(var(--ex-primary))",
+        success: "hsl(var(--ex-success))",
+        info: "hsl(var(--ex-info))",
+        warning: "hsl(var(--ex-warning))",
+        danger: "hsl(var(--ex-danger))",
+        a: { border: "hsla(var(--ex-base-color),var(--ex-border-opacity))" },
       },
     },
     safelist: [

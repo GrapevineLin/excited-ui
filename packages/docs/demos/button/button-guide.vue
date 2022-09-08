@@ -1,21 +1,29 @@
 <template>
-  <div style="margin-bottom: 20px">
-    <ExButton color="blue">主要按钮</ExButton>
-    <ExButton color="green">绿色按钮</ExButton>
-    <ExButton color="gray">灰色按钮</ExButton>
-    <ExButton color="yellow">黄色按钮</ExButton>
-    <ExButton color="red">红色按钮</ExButton>
+  <div class="mb-2">
+    <ExButton type="default">default</ExButton>
+    <ExButton type="primary">primary</ExButton>
+    <ExButton type="success">success</ExButton>
+    <ExButton type="warning">warning</ExButton>
+    <ExButton type="danger">danger</ExButton>
+    <ExButton type="info">info</ExButton>
+    <ExButton color="gray">gray</ExButton>
+    <ExButton color="pink">pink</ExButton>
+    <ExButton color="red" plain>red-plain</ExButton>
+    <ExButton plain>plain</ExButton>
+    <ExButton square>square</ExButton>
   </div>
-  <div style="margin-bottom: 20px">
-    <ExButton size="small" plain>小按钮</ExButton>
-    <ExButton size="medium" plain>中按钮</ExButton>
-    <ExButton size="large" plain>大按钮</ExButton>
+  <div class="mb-2">
+    <ExButton size="small">small</ExButton>
+    <ExButton>default</ExButton>
+    <ExButton size="medium">medium</ExButton>
+    <ExButton size="large">large</ExButton>
+    <ExButton class="text-3xl">text-3xl</ExButton>
   </div>
-  <div style="margin-bottom: 20px">
-    <ExButton color="blue" round plain icon="search">搜索按钮</ExButton>
-    <ExButton color="green" round plain icon="edit">编辑按钮</ExButton>
-    <ExButton color="gray" round plain icon="check">成功按钮</ExButton>
-    <ExButton color="yellow" round plain icon="message">提示按钮</ExButton>
-    <ExButton color="red" round plain icon="delete">删除按钮</ExButton>
+  <div class="mb-2">
+    <ExButton color="blue" icon="search">search</ExButton>
+    <ExButton color="green" icon="edit">edit</ExButton>
+    <ExButton color="gray" icon="check">check</ExButton>
+    <ExButton color="orange" icon="message">message</ExButton>
+    <ExButton color="red" icon="delete">delete</ExButton>
   </div>
 </template>

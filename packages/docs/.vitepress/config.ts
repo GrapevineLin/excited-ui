@@ -54,11 +54,11 @@ function nav() {
       text: version,
       items: [
         {
-          text: "版本日志",
+          text: "Changelog",
           link: "https://github.com/GrapevineLin/excited-ui/blob/main/CHANGELOG.md",
         },
         {
-          text: "贡献代码",
+          text: "Contributing",
           link: "https://github.com/GrapevineLin/excited-ui/blob/main/.github/contributing.md",
         },
       ],
@@ -68,19 +68,19 @@ function nav() {
 function sidebarGuide(): any {
   return [
     {
-      text: "介绍",
+      text: "Introduction",
       collapsible: true,
       items: [
         // { text: "What is VitePress?", link: "/guide/what-is-vitepress" },
-        { text: "起步", link: "/guide/getting-started" },
+        { text: "Getting Started", link: "/guide/getting-started" },
         // { text: "Configuration", link: "/guide/configuration" },
         // { text: "Deploying", link: "/guide/deploying" },
       ],
     },
     {
-      text: "组件",
+      text: "Components",
       collapsible: true,
-      items: [{ text: "按钮", link: "/guide/components/button" }],
+      items: [{ text: "Button", link: "/guide/components/button" }],
     },
   ];
 }

@@ -1,0 +1,4 @@
+@function getHSLColor($var) {
+    @return hsl(var($var));
+  }
+  

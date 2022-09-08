@@ -1,39 +1,43 @@
 @import '@unocss/reset/tailwind.css';
 
 :root {
-    --e-base-color: 0, 10%, 20%;
-    --e-layer: 0, 0%, 100%;
-    --e-border-opacity: 0.12;
-    --e-overlay-color: 0, 0%, 0%;
-    --e-overlay-opacity: 0.35;
+    --ex-base-color: 0, 10%, 20%;
+    --ex-layer: 0, 0%, 100%;
+    --ex-border-opacity: 0.12;
+    --ex-overlay-color: 0, 0%, 0%;
+    --ex-overlay-opacity: 0.35;
 
-    --e-primary: 265, 97.7%, 66.3%;
-    --e-success: 94.5, 100%, 39.6%;
-    --e-info: 200.1, 100%, 54.3%;
-    --e-warning: 42.4, 100%, 50%;
-    --e-danger: 358.3, 100%, 64.9%;
+    --ex-default: 265, 97.7%, 66.3%;
+    --ex-primary: 265, 97.7%, 66.3%;
+    --ex-success: 94.5, 100%, 39.6%;
+    --ex-info: 200.1, 100%, 54.3%;
+    --ex-warning: 42.4, 100%, 50%;
+    --ex-danger: 358.3, 100%, 64.9%;
+
+    // button
+    --ex-button-hover-opacity: 0.85;
 
     // text emphasis
-    --e-text-emphasis-high-opacity: 0.87;
-    --e-text-emphasis-medium-opacity: 0.68;
-    --e-text-emphasis-light-opacity: 0.38;
+    --ex-text-emphasis-high-opacity: 0.87;
+    --ex-text-emphasis-medium-opacity: 0.68;
+    --ex-text-emphasis-light-opacity: 0.38;
 }
 
 :root.dark {
-  --e-base-color: 0, 0%, 94%;
-  --e-layer: 0, 0%, 12%;
-  --e-overlay-opacity: 0.5;
+  --ex-base-color: 0, 0%, 94%;
+  --ex-layer: 0, 0%, 12%;
+  --ex-overlay-opacity: 0.5;
 
-  --e-primary: 261, 73%, 66.3%;
-  --e-success: 94.5, 73%, 39.6%;
-  --e-info: 200.1, 73%, 54.3%;
-  --e-warning: 42.4, 73%, 50%;
-  --e-danger: 358.3, 73%, 64.9%;
+  --ex-primary: 261, 73%, 66.3%;
+  --ex-success: 94.5, 73%, 39.6%;
+  --ex-info: 200.1, 73%, 54.3%;
+  --ex-warning: 42.4, 73%, 50%;
+  --ex-danger: 358.3, 73%, 64.9%;
 }
 
 
 html, body {
-  color: hsla(var(--e-base-color), 0.68);
+  color: hsla(var(--ex-base-color), 0.68);
 
   // Disable mobile tap blue color
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
@@ -45,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: hsla(var(--e-base-color), 0.87)
+  color: hsla(var(--ex-base-color), 0.87)
 }
 
  // Remove outline
