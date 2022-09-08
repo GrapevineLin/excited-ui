@@ -18,3 +18,4 @@ export {
 } from "./presets/theme-default";
 
 export * from "./components";
+export { ExComponentResolver } from "./componentResolver";

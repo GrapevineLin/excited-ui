@@ -19,31 +19,10 @@ export default defineConfigWithTheme({
     sidebar: {
       "/guide/": sidebarGuide(),
     },
-    // sidebar:[
-    //   { text: 'Guide', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
-    // ]
-    // sidebar: {
-
-    //   '/guide': [
-    //     {
-    //       text: '介绍',
-    //       items: [
-    //         { text: '起步', link: '/pages/Guide/GettingStarted/index' },
-    //         { text: 'Button', link: '/pages/Button/index' },
-    //       ]
-    //     },
-    //     {
-    //       text: '组件',
-    //       items: [
-    //         { text: 'Button', link: '/pages/Button/index' },
-    //       ]
-    //     }
-    //   ]
-    // }
   },
   markdown: {
-    // theme: 'dracula',
-    theme: "material-palenight",
+    theme: 'dracula',
+    // theme: "material-palenight",
     lineNumbers: true,
   },
 });
@@ -71,10 +50,9 @@ function sidebarGuide(): any {
       text: "Introduction",
       collapsible: true,
       items: [
-        // { text: "What is VitePress?", link: "/guide/what-is-vitepress" },
+        { text: "What is ExcitedUI?", link: "/guide/what-is-excited-ui" },
         { text: "Getting Started", link: "/guide/getting-started" },
-        // { text: "Configuration", link: "/guide/configuration" },
-        // { text: "Deploying", link: "/guide/deploying" },
+        { text: "Stories/Origin", link: "/guide/stories" },
       ],
     },
     {

@@ -1,63 +1,117 @@
-<p align="center">
-  <a href="https://grapevinelin.github.io/excited-ui/" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://grapevinelin.github.io/excited-ui/images/logo.png" alt="Vite logo">
-  </a>
-</p>
-<br/>
+# Getting Started
 
-<p align="center">
-  <!-- <a href="https://github.com/GrapevineLin/excited-ui">
-    <img src="https://img.shields.io/badge/Excited-%E5%AD%A6%E4%B9%A0%E4%B8%80%E4%B8%AA-blue"/>
-  </a> -->
-  <a href="https://github.com/GrapevineLin/excited-ui">
-    <img src="https://github.com/GrapevineLin/excited-ui/actions/workflows/ci.yaml/badge.svg"/>
-  </a>
-  <a href="https://codecov.io/gh/GrapevineLin/excited-ui" > 
-    <img src="https://codecov.io/gh/GrapevineLin/excited-ui/branch/main/graph/badge.svg?token=CMRZP7WCFA"/> 
-  </a>
-  <a href="https://badge.fury.io/js/excited-ui"><img src="https://badge.fury.io/js/excited-ui.svg" alt="npm version" height="18"></a>
-</p>
+## Installation
 
-# Excited UI
+1. Add `@excited-ui/core` and its supporting libraries
 
-一个用于练习的Vue3组件库，因为看起来很令人兴奋，所以叫 `Excited UI`
+    ```bash
+    # pnpm
+    pnpm add @excited-ui/core && pnpm add unocss
+    ```
 
-[组件](/guide/components/button)
+    ```bash 
+    # yarn
+    yarn add @excited-ui/core && yarn add unocss
+    ```
 
-## 技术栈考量
+    ```bash
+    # npm
+    npm install @excited-ui/core && npm install unocss
+    ```
 
-既然是练习为目的的库，那么技术方面的选择一定有有点意思~
+ExcitedUI is based on UnoCSS, it means that it works properly with uno, so you should install it.
 
-- Vue3：Vue的最新版本
-- Vite：下一代前端构建工具
-- TypeScript：工程化必备
-- Pnpm：快速的，节省磁盘空间的包管理工具
-- UnoCSS: 可定制性和易用性都很棒的原子化CSS
-- VitePress：基于Vite的文档建设工具
 
-- 代码一致化：编码规范： ESLint （语法） + Prettier（格式）+ Husky (提交时自动检查)；
+## Usage
 
-[为什么原子化CSS选择Uno？](https://antfu.me/posts/reimagine-atomic-css-zh)
+1. Add UnoCSS to `vite.config.js`
 
-持续集成：GitHubAction
+```ts
+import Unocss from 'unocss/vite'
+export default {
+    plugins: [
+    Unocss(),
+    ],
+}
+```
 
-## 功能实现
+2. Create UnoCSS Config file `uno.config.js` in root of the project with below content:
 
-- [ ] 支持完整引入和按需引入
-- [x] 文档建设
-- [x] 代码一致化
-- [x] 单元测试
-- [ ] 主题换色
-- [x] monorepo
+    ```ts{14}
+    import { presetThemeDefault } from "@excited-ui/core";
+    import {
+      defineConfig,
+      presetIcons,
+      presetUno,
+    } from 'unocss'
+    export default defineConfig({
+      presets: [
+        presetUno(),
+        presetIcons({
+          scale: 1.2,
+          extraProperties: {
+            height: '1.5em',
+            'flex-shrink': '0',
+          },
+        }),
+        presetThemeDefault(),
+      ],
+      include: [/.*\/excited-ui\.js(.*)?$/, './**/*.vue', './**/*.md'],
+    })
+    ```
 
-## 进阶
+3. Update your `main.js` file like below:
 
-### Web Components
+    ```js
+    import { createApp } from 'vue'
+    import App from './App.vue'
+    import { ExcitedUI } from "@excited-ui/core";
+    // UnoCSS import
+    import 'uno.css'
+    // import styles
+    import "@excited-ui/core/dist/assets/index.css";
+    // Using `app.use(ExcitedUI)` will register all the components globally
+    createApp(App)
+      .use(ExcitedUI)
+      .mount('#app')
+    ```
 
-如果能编译成 `Web Components`，可以在技术栈不敏感的场景下使用，那么将实用性将大大提升，具体仍需[调研](https://cn.vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue)
+It's done! 🥳
 
-## 关于logo
+### On-demand Import
 
-无设计，白嫖自这个网站：https://www.shopify.com/tools/logo-maker/onboarding/preview
+First you need to install [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) lets you auto import components on demand. With this you can omit import statement and still get benefits of tree shaking.
 
-这个[AI绘图](https://openai.com/dall-e-2/)似乎更有趣，但是需要💰
+1. install `unplugin-vue-components`
+
+  ```bash
+  pnpm add -D unplugin-vue-components
+  ```
+  
+2. Add following in `vite.config.js`:
+
+    ```js
+    // other imports
+    import Components from 'unplugin-vue-components/vite'
+    import { ExComponentResolver } from '@excited-ui/core'
+    export default defineConfig({
+      plugins: [
+        // other plugins
+        Components({
+          resolvers: [
+            ExComponentResolver()
+          ]
+        }),
+      ],
+    
+      // other config
+    })
+    ```
+
+3. Now, just use components without import manually because it will be auto imported on demand ✨
+
+    ```vue
+    <template>
+      <ExButton>Primary</ExButton>
+    </template>
+    ```
