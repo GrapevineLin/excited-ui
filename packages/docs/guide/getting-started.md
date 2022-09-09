@@ -2,21 +2,21 @@
 
 ## Installation
 
-1. Add `@excited-ui/core` and its supporting libraries
+1. Add `excited-ui` and its supporting libraries
 
     ```bash
     # pnpm
-    pnpm add @excited-ui/core && pnpm add unocss
+    pnpm add excited-ui && pnpm add unocss
     ```
 
     ```bash 
     # yarn
-    yarn add @excited-ui/core && yarn add unocss
+    yarn add excited-ui && yarn add unocss
     ```
 
     ```bash
     # npm
-    npm install @excited-ui/core && npm install unocss
+    npm install excited-ui && npm install unocss
     ```
 
 ExcitedUI is based on UnoCSS, it means that it works properly with uno, so you should install it.
@@ -38,7 +38,7 @@ export default {
 2. Create UnoCSS Config file `uno.config.js` in root of the project with below content:
 
     ```ts{14}
-    import { presetThemeDefault } from "@excited-ui/core";
+    import { presetThemeDefault } from "excited-ui";
     import {
       defineConfig,
       presetIcons,
@@ -65,11 +65,11 @@ export default {
     ```js
     import { createApp } from 'vue'
     import App from './App.vue'
-    import { ExcitedUI } from "@excited-ui/core";
+    import { ExcitedUI } from "excited-ui";
     // UnoCSS import
     import 'uno.css'
     // import styles
-    import "@excited-ui/core/dist/assets/index.css";
+    import "excited-ui/dist/assets/index.css";
     // Using `app.use(ExcitedUI)` will register all the components globally
     createApp(App)
       .use(ExcitedUI)
@@ -93,7 +93,7 @@ First you need to install [unplugin-vue-components](https://github.com/antfu/unp
     ```js
     // other imports
     import Components from 'unplugin-vue-components/vite'
-    import { ExComponentResolver } from '@excited-ui/core'
+    import { ExComponentResolver } from 'excited-ui'
     export default defineConfig({
       plugins: [
         // other plugins

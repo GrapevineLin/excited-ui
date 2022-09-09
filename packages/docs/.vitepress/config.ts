@@ -1,5 +1,5 @@
 import { defineConfigWithTheme } from "vitepress";
-import { version } from "@excited-ui/core/package.json";
+import { version } from "excited-ui/package.json";
 const env = require("process").env;
 
 const DEPLOY_BASE = env.DEPLOY_BASE ?? "/excited-ui/";

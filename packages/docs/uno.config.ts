@@ -4,7 +4,7 @@ import {
   presetIcons,
   defineConfig,
 } from "unocss";
-import { presetThemeDefault } from "@excited-ui/core";
+import { presetThemeDefault } from "excited-ui";
 
 export const unoColors = [
   "white",

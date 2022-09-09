@@ -17,7 +17,7 @@
   "author": "Grapevine(YD)Lin",
   "license": "MIT",
   "dependencies": {
-    "@excited-ui/core": "workspace: *",
+    "excited-ui": "workspace: *",
     "@iconify-json/ic": "^1.1.9"
   },
   "devDependencies": {

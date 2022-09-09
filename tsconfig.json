@@ -18,7 +18,7 @@
     "skipDefaultLibCheck": true,
     "noUnusedLocals": true,
     "paths": {
-      "@excited-ui/core": ["./packages/core/src/index.ts"]
+      "excited-ui": ["./packages/core/src/index.ts"]
     },
     "types": ["vite/client", "node"]
   },

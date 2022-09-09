@@ -4,7 +4,7 @@ export const eColors = ["primary", "success", "info", "warning", "danger"];
 
 export function presetThemeDefault(): Preset {
   return {
-    name: "@excited-ui/core/preset-theme-default",
+    name: "excited-ui/preset-theme-default",
     theme: {
       colors: {
         default: "hsl(var(--ex-default))",

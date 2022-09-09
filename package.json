@@ -16,7 +16,8 @@
     "test": "vitest --config packages/core/vite.config.ts",
     "test:run": "vitest run --coverage --config packages/core/vite.config.ts",
     "preinstall": "node ./scripts/preinstall.js",
-    "clean": "rimraf node_modules packages/core/node_modules packages/core/dist packages/docs/node_modules"
+    "clean": "rimraf node_modules packages/core/node_modules packages/core/dist packages/docs/node_modules",
+    "release": "pnpm --filter excited-ui publish -f --access public --publish-branch publish"
   },
   "keywords": [
     "excited",
@@ -28,7 +29,7 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/types": "^17.0.0",
-    "@excited-ui/core": "workspace:*",
+    "excited-ui": "workspace:*",
     "@types/node": "^18.7.14",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",

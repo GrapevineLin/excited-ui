@@ -1,11 +1,11 @@
 import DefaultTheme from "vitepress/theme";
-import { ExcitedUI } from "@excited-ui/core";
+import { ExcitedUI } from "excited-ui";
 import DemoBlock from "@/components/DemoBlock/index.vue";
 import { App } from "vue";
 import { batchRegisterComponents } from "@/utils/index";
 import "uno.css";
 import "./style.css";
-import "@excited-ui/core/dist/assets/index.css";
+import "excited-ui/dist/assets/index.css";
 
 export default {
   ...DefaultTheme,

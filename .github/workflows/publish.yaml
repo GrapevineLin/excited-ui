@@ -21,7 +21,7 @@ jobs:
 
       - uses: pnpm/action-setup@v2.0.1
         name: Install pnpm
-        id: pnpm-install
+        id: pnpm install
         with:
           version: 7
           run_install: false
@@ -40,8 +40,8 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile	
+        run: pnpm install --no-frozen-lockfile
 
-      - run: pnpm publish -f --access public --publish-branch publish
+      - run: pnpm release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}

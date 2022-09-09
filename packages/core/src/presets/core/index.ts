@@ -2,7 +2,7 @@ import type { Preset } from "@unocss/core";
 
 export function presetCore(): Preset {
   return {
-    name: "@excited-ui/core/preset-core",
+    name: "excited-ui/preset-core",
     variants: [
       (matcher: string) => {
         if (!matcher.startsWith("i:")) return matcher;
