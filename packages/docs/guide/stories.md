@@ -22,7 +22,7 @@
 
 一个用于练习的Vue3组件库，因为看起来很令人兴奋，所以叫 `Excited UI`
 
-[阅读文档](https://grapevinelin.github.io/excited-ui/)
+[组件](/guide/components/button)
 
 ## 技术栈考量
 

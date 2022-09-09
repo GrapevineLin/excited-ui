@@ -1,0 +1,27 @@
+{
+  "name": "@excited-ui/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev --open",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [
+    "excited",
+    "vue",
+    "ui",
+    "vitepress"
+  ],
+  "author": "Grapevine(YD)Lin",
+  "license": "MIT",
+  "dependencies": {
+    "excited-ui": "workspace: *",
+    "@iconify-json/ic": "^1.1.9"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8",
+    "unocss": "^0.45.15"
+  }
+}

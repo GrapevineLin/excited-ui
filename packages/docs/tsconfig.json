@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": ".vitepress/dist",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/demos/*": ["demos/*"],
+      "@/utils/*": ["utils/*"]
+    }
+  },
+  "include": ["components/**/*", ".vitepress/**/*", "vite.config.ts"],
+  "references": [{ "path": "../core/tsconfig.json" }]
+}
