@@ -20,7 +20,7 @@ describe("ExButton", () => {
   });
 });
 
-describe("color", () => {
+describe("className", () => {
   test("default", () => {
     const wrapper = shallowMount(ExButton, {
       slots: {
@@ -31,11 +31,11 @@ describe("color", () => {
       wrapper
         .classes()
         .map((v) => v.replace("\n", ""))
-        .includes("bg-blue-500")
+        .includes("ex-button")
     ).toBe(true);
   });
 
-  test("red", () => {
+  test("colored", () => {
     const wrapper = mount(ExButton, {
       slots: {
         default: "ExButton",
@@ -44,6 +44,6 @@ describe("color", () => {
         color: "red",
       },
     });
-    expect(wrapper.classes().includes("bg-red-500")).toBe(true);
+    expect(wrapper.classes().includes("ex-button--colored")).toBe(true);
   });
 });
