@@ -1,0 +1,31 @@
+@use "@/style/function.scss" as *;
+
+$buttonTypes: "default", "primary", "success", "warning", "info", "danger";
+
+@each $type in $buttonTypes {
+    .ex-button--#{$type} {
+        background-color: getHSLColor(--ex-#{$type});
+    }
+    .ex-button--#{$type}--plain {
+        opacity: 1;
+        color: getHSLColor(--ex-#{$type});
+        &:hover {
+            background-color: getHSLColor(--ex-#{$type});
+            color: white;
+        }
+    }
+}
+
+.ex-button--colored {
+    background-color: var(--ex-button-color);
+    color: white;
+    &--plain {
+        opacity: 1;
+        background-color: white;
+        color: var(--ex-button-color);
+        &:hover {
+            color: white;
+            background-color: var(--ex-button-color);
+        }
+    }
+}
