@@ -1,4 +1,4 @@
-name: Publish Excited-ui To Npm
+name: Npm Publish
 
 on:
   push:
@@ -41,7 +41,11 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
+        
+      - name: Build
+        run: pnpm build
 
-      - run: pnpm release
+      - name: Release
+        run: pnpm release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}

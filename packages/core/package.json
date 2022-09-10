@@ -5,7 +5,10 @@
   "description": "an excited ui",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "build-w": "vite build --watch",
+    "test": "vitest --config vite.config.ts",
+    "test:run": "vitest run --coverage --config vite.config.ts"
   },
   "keywords": [
     "excited",
