@@ -3,24 +3,28 @@ import { ExButton } from "./index";
 export function getButtonClass(
   props: InstanceType<typeof ExButton>["$props"]
 ): string | undefined {
-  const { color, type, plain } = props;
+  const { color, type, outline, text } = props;
   let className = "";
+  if (text) {
+    className += `text `;
+  }
   if (color) {
     className += `ex-button--colored `;
-    if (plain) {
-      className += `ex-button--colored--plain `;
-    }
   } else {
     if (type) {
-      if (plain) {
-        className += `ex-button--${type}--plain `;
-      } else {
-        className += `ex-button--${type} `;
-      }
+      className += `ex-button--${type} `;
     }
   }
 
-  return `${className} ${getButtonSize(props)} ${getButtonRound(props)}`;
+  if (!outline) {
+    className += `border-none `;
+  } else {
+    className += `outline`;
+  }
+
+  return `${className} ${getButtonSize(props)}  ${getShadow(
+    props
+  )}${getButtonRound(props)} ${getDisabled(props)}`;
 }
 
 function getButtonSize(props: InstanceType<typeof ExButton>["$props"]): string {
@@ -52,6 +56,26 @@ function getButtonRound(
     className += "rounded-md";
   } else {
     className += "rounded-xl";
+  }
+  return className;
+}
+
+function getDisabled(props: InstanceType<typeof ExButton>["$props"]): string {
+  let className = "";
+  const { disabled } = props;
+  if (disabled) {
+    className += " opacity-50 cursor-not-allowed ";
+  } else {
+    className += " hover:opacity-80 focus:opacity-80 ";
+  }
+  return className;
+}
+
+function getShadow(props: InstanceType<typeof ExButton>["$props"]): string {
+  let className = "";
+  const { text } = props;
+  if (!text) {
+    className += " shadow-md  ";
   }
   return className;
 }
