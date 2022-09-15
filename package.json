@@ -14,7 +14,7 @@
     "test:run": "vitest run --coverage --config packages/core/vite.config.ts",
     "preinstall": "node ./scripts/preinstall.js",
     "clean": "rimraf node_modules packages/core/node_modules packages/core/dist packages/docs/node_modules",
-    "release": "pnpm --filter excited-ui publish -f --access public --publish-branch publish"
+    "release": "pnpm --filter excited-ui release"
   },
   "keywords": [
     "excited",

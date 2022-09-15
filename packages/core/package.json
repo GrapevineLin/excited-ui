@@ -1,6 +1,6 @@
 {
   "name": "excited-ui",
-  "version": "0.0.4",
+  "version": "0.0.5-0",
   "type": "module",
   "description": "an excited ui",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "vite build",
     "build-w": "vite build --watch",
     "test": "vitest --config vite.config.ts",
-    "test:run": "vitest run --coverage --config vite.config.ts"
+    "test:run": "vitest run --coverage --config vite.config.ts",
+    "release": "pnpm publish -f --access public --publish-branch publish"
   },
   "keywords": [
     "excited",
