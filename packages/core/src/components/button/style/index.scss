@@ -6,9 +6,9 @@ $buttonTypes: "default", "primary", "success", "warning", "info", "danger";
     .ex-button--#{$type} {
         background-color: getHSLColor(--ex-#{$type});
     }
-    .ex-button--#{$type}--plain {
-        opacity: 1;
+    .ex-button--#{$type}.outline {
         color: getHSLColor(--ex-#{$type});
+        background-color: transparent;
         &:hover {
             background-color: getHSLColor(--ex-#{$type});
             color: white;
@@ -19,7 +19,7 @@ $buttonTypes: "default", "primary", "success", "warning", "info", "danger";
 .ex-button--colored {
     background-color: var(--ex-button-color);
     color: white;
-    &--plain {
+    &.outline {
         opacity: 1;
         background-color: white;
         color: var(--ex-button-color);
@@ -27,5 +27,18 @@ $buttonTypes: "default", "primary", "success", "warning", "info", "danger";
             color: white;
             background-color: var(--ex-button-color);
         }
+    }
+}
+
+.ex-button.text {
+    opacity: 1;
+    color: gray;
+    &.ex-button--colored {
+        color: var(--ex-button-color);
+    }
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        opacity: 0.8;
     }
 }

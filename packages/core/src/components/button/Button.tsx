@@ -33,7 +33,15 @@ export const props = {
     type: Boolean,
     default: false,
   },
-  plain: {
+  outline: {
+    type: Boolean,
+    default: false,
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
+  text: {
     type: Boolean,
     default: false,
   },
@@ -50,17 +58,14 @@ export const ExButton = defineComponent({
       py-2
       px-4
       font-semibold 
-      shadow-md 
       text-white 
-      hover:opacity-80
-      border-none 
       cursor-pointer 
       m-1
       ${getButtonClass(props)}
       `}
         style={{ "--ex-button-color": props.color }}
       >
-        {props.icon && (
+        {props.icon && !props.text && (
           <i class={`i-ic-baseline-${String(props.icon)} p-3`}></i>
         )}
         {slots.default ? slots.default() : ""}

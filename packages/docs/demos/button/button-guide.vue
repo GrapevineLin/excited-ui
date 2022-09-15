@@ -8,8 +8,8 @@
     <ExButton type="info">info</ExButton>
     <ExButton color="gray">gray</ExButton>
     <ExButton color="pink">pink</ExButton>
-    <ExButton color="red" plain>red-plain</ExButton>
-    <ExButton plain>plain</ExButton>
+    <ExButton color="red" outline>red-outline</ExButton>
+    <ExButton outline>outline</ExButton>
     <ExButton square>square</ExButton>
   </div>
   <div class="mb-2">
@@ -24,6 +24,6 @@
     <ExButton color="green" icon="edit">edit</ExButton>
     <ExButton color="gray" icon="check">check</ExButton>
     <ExButton color="orange" icon="message">message</ExButton>
-    <ExButton color="red" icon="delete">delete</ExButton>
+    <ExButton color="red" disabled icon="delete">delete</ExButton>
   </div>
 </template>
