@@ -1,4 +1,12 @@
-# 0.0.3 (2022-09-10)
+# 0.0.4 (2022-09-15)
+### Features
+
+- enhance button component
+
+### Bug Fixes
+
+- wrong build script
+- # 0.0.3 (2022-09-10)
 ### Bug Fixes
 
 - fix wrong reg in ExComponentResolver
