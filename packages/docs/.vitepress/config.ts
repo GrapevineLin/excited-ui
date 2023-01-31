@@ -21,7 +21,7 @@ export default defineConfigWithTheme({
     },
   },
   markdown: {
-    theme: 'dracula',
+    theme: "dracula",
     // theme: "material-palenight",
     lineNumbers: true,
   },
@@ -58,7 +58,10 @@ function sidebarGuide(): any {
     {
       text: "Components",
       collapsible: true,
-      items: [{ text: "Button", link: "/guide/components/button" }],
+      items: [
+        { text: "Button", link: "/guide/components/button" },
+        { text: "Dialog", link: "/guide/components/dialog" },
+      ],
     },
   ];
 }
