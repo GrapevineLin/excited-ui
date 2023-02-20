@@ -8,6 +8,8 @@ export function registerComponents(
   for (const module in requireModule) {
     const name = module.split("/")?.at(-1)?.split(".")[0];
     if (name) {
+      console.log(name);
+
       const modulesConent: any = requireModule[module];
       app.component(name, defineAsyncComponent(modulesConent));
     }

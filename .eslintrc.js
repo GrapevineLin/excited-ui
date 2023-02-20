@@ -10,6 +10,7 @@ module.exports = {
     ga: true,
     chrome: true,
     __DEV__: true,
+    NodeJS: true,
   },
   // 解析 .vue 文件
   parser: "vue-eslint-parser",

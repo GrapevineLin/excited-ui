@@ -61,6 +61,7 @@ function sidebarGuide(): any {
       items: [
         { text: "Button", link: "/guide/components/button" },
         { text: "Dialog", link: "/guide/components/dialog" },
+        { text: "Toast", link: "/guide/components/toast" },
       ],
     },
   ];
