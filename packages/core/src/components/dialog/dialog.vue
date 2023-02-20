@@ -1,6 +1,5 @@
 <template>
   <Teleport to="body">
-    <!-- TODO: Transition not work -->
     <Transition name="bg">
       <div
         v-if="showDialog"

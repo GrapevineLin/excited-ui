@@ -92,3 +92,7 @@ textarea {
 .bg-leave-active {
   transition: background-color 0.2s ease-in-out;
 }
+.bg-enter-from,
+.bg-leave-to {
+  background-color: transparent !important;
+}
